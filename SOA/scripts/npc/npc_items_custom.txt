@@ -1,0 +1,28 @@
+"DOTAItems"
+{
+	//=================================================================================================================
+	// Flying Courier
+	//=================================================================================================================
+	"item_flying_courier"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"84"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"150"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"crow;flying courier"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemStockMax"					"1"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"60.0"
+		"ItemInitialStockTime"			"335.0"
+		"ItemSupport"					"1"
+		"IsTempestDoubleClonable"		"0"
+	}
+}

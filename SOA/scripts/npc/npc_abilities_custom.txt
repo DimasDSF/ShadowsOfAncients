@@ -1,0 +1,103 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	//==============================
+	// VGMAR: Custom Creep Abilities
+	//==============================
+	
+	//=================================================================================================================
+	// VGMAR: Catapult: Faceless Void: TimeLock
+	//=================================================================================================================
+	"vgmar_c_siegetimelock"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"BaseClass"						"faceless_void_time_lock"
+		"MaxLevel"						"3"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration_creep"		"2.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chance_pct"			"100"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"25 50 75"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// VGMAR: Item: Razor: PurgeField
+	//=================================================================================================================
+	"vgmar_i_purgefield"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"BaseClass"						"razor_unstable_current"
+		"MaxLevel"						"1"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.5"
+				
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_speed_pct"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hit_interval"			"0.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"slow_duration"	"0.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_amount"		"-0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"		"125"
+			}
+			"06"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"radius"		"375"
+			}
+		}
+	}
+}

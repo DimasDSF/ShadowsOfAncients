@@ -1,0 +1,7 @@
+"CustomEvents"
+{
+    // Display changelog
+    "SOAOnInfo"
+    {    
+    }
+}

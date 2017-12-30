@@ -7,6 +7,8 @@
 # Standard to msysgit
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
+*.txt  diff=astextplain
+*.TXT  diff=astextplain
 *.docx diff=astextplain
 *.DOCX diff=astextplain
 *.dot  diff=astextplain
