@@ -27,11 +27,12 @@ end
 
 function SOA:Init()
 	
-	--LinkLuaModifier("modifier_vgmar_util_dominator_ability_purger", "abilities/util/modifiers/modifier_vgmar_util_dominator_ability_purger.lua", LUA_MODIFIER_MOTION_NONE)
+	LinkLuaModifier("modifier_player_weapon_system", "scripted/modifiers/player_weapon_system.lua", LUA_MODIFIER_MOTION_NONE)
 	
 	self.mode = GameRules:GetGameModeEntity()
-	GameRules:SetCustomGameTeamMaxPlayers(DOTA_TEAM_GOODGUYS, RADIANT_TEAM_MAX_PLAYERS)
-    GameRules:SetCustomGameTeamMaxPlayers(DOTA_TEAM_BADGUYS, DIRE_TEAM_MAX_PLAYERS)
+	GameRules:SetCustomGameTeamMaxPlayers(DOTA_TEAM_GOODGUYS, 5)
+    GameRules:SetCustomGameTeamMaxPlayers(DOTA_TEAM_BADGUYS, 0)
+	GameRules:SetSameHeroSelectionEnabled(true)
 	GameRules:SetStrategyTime( 0.0 )
 	GameRules:SetShowcaseTime( 0.0 )
 	GameRules:SetCustomGameSetupAutoLaunchDelay( 5 )
@@ -364,6 +365,10 @@ function SOA:OnNPCSpawned( event )
 	local spawnedUnit = EntIndexToHScript( event.entindex )
 	if not spawnedUnit or spawnedUnit:GetClassname() == "npc_dota_thinker" or spawnedUnit:IsPhantom() then
 		return
+	end
+	
+	if spawnedUnit:GetName() == "npc_dota_hero_sniper" and spawnedUnit:FindModifierByName("modifier_player_weapon_system") == nil then
+		spawnedUnit:AddNewModifier(spawnedUnit, nil, "modifier_player_weapon_system", {})
 	end
 end
 

@@ -25,4 +25,151 @@
 		"ItemSupport"					"1"
 		"IsTempestDoubleClonable"		"0"
 	}
+	"item_ammo_762"
+	{
+		// General
+		//-------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"scripted/items/ammo.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityTextureName"			"custom/ammo/AK"
+		"FightRecapLevel"				"1"
+		
+		"AbilityChannelTime"			"1.0"
+		
+		"ItemCost"						"500"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"ammo"
+		"ItemStackable"                 "1"
+		"ItemShareability"              "ITEM_FULLY_SHAREABLE"
+		"ItemInitialCharges"			"1"
+		"IsTempestDoubleClonable"       "0"
+		"ItemRequiresCharges"           "1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"clip_ammo"				"30"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"icon_type"				"1"
+			}
+		}
+	}
+	"item_ammo_542"
+	{
+		// General
+		//-------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"scripted/items/ammo.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityTextureName"			"custom/ammo/M4"
+		"FightRecapLevel"				"1"
+		
+		"AbilityChannelTime"			"1.0"
+		
+		"ItemCost"						"500"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"ammo"
+		"ItemStackable"                 "1"
+		"ItemShareability"              "ITEM_FULLY_SHAREABLE"
+		"ItemInitialCharges"			"1"
+		"IsTempestDoubleClonable"       "0"
+		"ItemRequiresCharges"           "1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"clip_ammo"				"30"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"icon_type"				"2"
+			}
+		}
+	}
+	"item_ammo_awp"
+	{
+		// General
+		//-------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"scripted/items/ammo.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityTextureName"			"custom/ammo/AWP"
+		"FightRecapLevel"				"1"
+		
+		"AbilityChannelTime"			"1.0"
+		
+		"ItemCost"						"500"
+		"ItemQuality"					"consumable"
+		"ItemAliases"					"ammo"
+		"ItemStackable"                 "1"
+		"ItemShareability"              "ITEM_FULLY_SHAREABLE"
+		"ItemInitialCharges"			"1"
+		"IsTempestDoubleClonable"       "0"
+		"ItemRequiresCharges"           "1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"clip_ammo"				"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"icon_type"				"3"
+			}
+		}
+	}
+	"item_weapon_ak"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"custom/weapon/AK"
+		
+		"ItemCost"						"4000"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"weapon"
+		"ItemInitialCharges"			"30"
+		"ItemDisplayCharges"			"1"
+		"ItemRequiresCharges"          	"0"
+		"ItemShareability"              "ITEM_FULLY_SHAREABLE"
+	}
+	"item_weapon_m4"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"custom/weapon/M4"
+		
+		"ItemCost"						"4000"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"weapon"
+		"ItemInitialCharges"			"30"
+		"ItemDisplayCharges"			"1"
+		"ItemRequiresCharges"          	"0"
+		"ItemShareability"              "ITEM_FULLY_SHAREABLE"
+	}
+	"item_weapon_awp"
+	{
+		"BaseClass"						"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"custom/weapon/AWP"
+		
+		"ItemCost"						"4000"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"weapon"
+		"ItemInitialCharges"			"10"
+		"ItemDisplayCharges"			"1"
+		"ItemRequiresCharges"          	"0"
+		"ItemShareability"              "ITEM_FULLY_SHAREABLE"
+	}
 }
